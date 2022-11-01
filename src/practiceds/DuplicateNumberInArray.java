@@ -25,16 +25,11 @@ public class DuplicateNumberInArray {
                 if (nums[nums[index]] != nums[index]) {
                     swap(nums, index, nums[index]);
                 } else {
-                    index++;
+                    return nums[index];
                 }
             }
         }
-
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != i) {
-                return nums[i];
-            }
-        }
+        
         return -1;
     }
 
