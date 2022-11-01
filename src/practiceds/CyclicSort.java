@@ -14,8 +14,10 @@ import java.util.Arrays;
 public class CyclicSort {
 
     public static void main(String[] args) {
-        int[] arr = {4, 2, 1, 3, 0};
-        cyclicSort(arr);
+//        int[] arr = {4, 2, 1, 3, 0};
+        int[] arr = {4, 2, 1, 3};
+//        cyclicSort(arr);
+        cyclicSortPlusOne(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -24,6 +26,17 @@ public class CyclicSort {
         while (i < nums.length) {
             if (nums[i] != i) {
                 swap(nums, i, nums[i]);
+            } else {
+                i++;
+            }
+        }
+    }
+    
+    static void cyclicSortPlusOne(int[] nums) {
+        int i = 0;
+        while(i < nums.length){
+            if(nums[i] != i + 1){
+                swap(nums, i, nums[i] - 1);
             } else {
                 i++;
             }
