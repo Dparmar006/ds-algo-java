@@ -1,4 +1,4 @@
-package practiceds;
+package practiceds.cyclic;
 
 import java.util.Arrays;
 
