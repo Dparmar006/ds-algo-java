@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MissingNumber {
     public static void main(String[] args) {
-    int[] arr = {3,0,1};
+    int[] arr = {2,0,1};
     cyclicSort(arr);
     }
 
@@ -24,10 +24,12 @@ public class MissingNumber {
                 System.out.println("Missing number is : " + i);
             }
         }
+
+        System.out.println("Missing number is : " + arr.length);
     }
 
 
-    static void swap(int arr[], int first, int second){
+    static void swap(int[] arr, int first, int second){
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
