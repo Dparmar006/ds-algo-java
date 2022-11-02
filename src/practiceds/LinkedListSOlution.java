@@ -29,6 +29,3 @@ class LLUsingArray {
     }
 }
 
-public class LinkedListSOlution {
-
-}
